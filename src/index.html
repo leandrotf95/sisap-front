@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="sisapApp">
+<head>
+    <meta charset="UTF-8">
+    <title>SISAP - Sistema de Achados e Perdidos</title>
+
+    <!-- libs -->
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <script src="./assets/angular.min.js"></script>
+    <script src="./assets/angular-route.min.js"></script>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/popper.min.js"></script>
+    <script src="./assets/bootstrap.min.js"></script>
+    
+    <!-- files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/modules/sisap-app.js"></script>
+    <script src="./js/interceptors/sisap-error-interceptor.js"></script>
+    <script src="./js/interceptors/sisap-interceptors-config.js"></script>
+    <script src="./js/routes/sisap-routes.js"></script>
+    <script src="./js/constants/sisap-constants.js"></script>
+    <script src="./js/services/sisap-factory.js"></script>
+    <script src="./js/controllers/sisap-home-controller.js"></script>
+    <script src="./js/controllers/sisap-login-controller.js"></script>
+
+</head>
+<body>
+    
+    <ng-view></ng-view>
+
+</body>
+</html>

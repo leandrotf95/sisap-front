@@ -1,0 +1,20 @@
+<div class="jumbotron" ng-controller="SisapLoginController as vm">
+    <h3 class="titulo">SISAP</h3>
+    <label for="login">Usuário</label>
+    <input type="text" class="form-control" id="login" ng-model="vm.usuario.login" placeholder="Nome de usuário ou email">
+    <label for="senha">Senha</label>
+    <div class="input-group">
+        <input type="{{vm.typeInputPassword}}" class="form-control" id="senha" ng-model="vm.usuario.senha" placeholder="Senha" revelar-senha>
+        <div class="input-group-append">
+            <button class="btn btn-outline-default input-group-text" ng-click="vm.revelarOcultarSenha()">
+                <img src="../img/hidden.png" alt="" ng-show="vm.typeInputPassword === 'password'">
+                <img src="../img/eye.png" alt="" ng-show="vm.typeInputPassword === 'text'">
+            </button>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 5%;">
+        <button class="btn btn-primary btn-sm">
+            <span>Login</span>
+        </button>
+    </div>
+</div>
